@@ -1,0 +1,24 @@
+snowflake-dw:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ks02908.us-central1.gcp
+
+      # User/password auth
+      user: AIRBYTE_USER
+      password: AIRBYTE_PASSWORD
+
+      role: AIRBYTE_ROLE
+      database: AIRBYTE_DATABASE
+      warehouse: AIRBYTE_WAREHOUSE
+      schema: AIRBYTE_SCHEMA
+      threads: 1
+      client_session_keep_alive: False
+      query_tag: dbt-q
+
+      # optional
+      connect_retries: 0                # default 0
+      connect_time: 10                  # default 10
+      retry_on_database_errors: False   # default False
+      retry_all: False                  # default False
