@@ -123,11 +123,7 @@ models:
 
   - name: base_produto	
     config:	
-      materialized: view	
-
-  - name: base_produto	
-    config:	
-      materialized: view	
+      materialized: view
 
   - name: base_subcategoria	
     config:	
