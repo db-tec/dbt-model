@@ -96,28 +96,40 @@ models:
   - name: base_cidade
     config:
       materialized: view
-    columns:
-      - name: location_key
-        tests:
-          - unique
-          - not_null
 
-  - name: base_economy
+  - name: base_cliente
     config:
       materialized: view
-    columns:
-      - name: location_key
-        tests:
-          - unique
-          - not_null
  
-  - name: base_epidemiology
+  - name: base_estado
     config:
-      tags: ['daily']
       materialized: view
-    columns:
-      - name: location_key
-        tests:
-          - relationships:
-              to: ref('base_index')
-              field: location_key
+  
+  - name: base_filial
+    config:
+      materialized: view
+
+  - name: base_item_pedido
+    config:
+      materialized: view
+
+  - name: base_parceiro
+    config:
+      materialized: view
+
+  - name: base_pedido
+    config:
+      materialized: view
+
+  - name: base_produto
+    config:
+      materialized: view
+
+  - name: base_produto
+    config:
+      materialized: view
+ 
+  - name: base_subcategoria
+    config:
+      materialized: view
+  
