@@ -3,14 +3,14 @@ snowflake-dw:
   outputs:
     dev:
       type: snowflake
-      account: ks02908.us-central1.gcp
+      account: cr15237.us-east4.gcp
 
       # User/password auth
       user: AIRBYTE_USER
       password: AIRBYTE_PASSWORD
 
       role: AIRBYTE_ROLE
-      database: AIRBYTE_DATABASE
+      database: AIRBYTE_MAGALU
       warehouse: AIRBYTE_WAREHOUSE
       schema: AIRBYTE_SCHEMA
       threads: 1
